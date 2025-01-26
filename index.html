@@ -1,0 +1,88 @@
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartCompare - Intelligenter Produktvergleich für Amazon Produkte</title>
+  <meta name="description" content="Vergleichen Sie Amazon Produkte intelligent und finden Sie das beste Preis-Leistungs-Verhältnis. Detaillierte Analysen, Preisvergleiche und Bewertungen.">
+  <meta name="keywords" content="amazon vergleich, produktvergleich, preisvergleich, produktanalyse, amazon deutschland">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#2196F3">
+  <link rel="apple-touch-icon" href="images/icon-192x192.svg">
+</head>
+<body>
+  <header>
+    <nav class="main-nav">
+      <div class="logo">
+        <svg width="200" height="40" viewBox="0 0 200 40">
+          <text x="10" y="30" fill="#2196F3" font-family="Arial" font-size="24">SmartCompare</text>
+        </svg>
+      </div>
+      <div class="search-container">
+        <input type="search" id="productSearch" placeholder="Produkt suchen...">
+        <button id="searchBtn">Suchen</button>
+      </div>
+      <div class="nav-links">
+        <a href="https://smartcompare.de/kategorien">Kategorien</a>
+        <a href="https://smartcompare.de/deals">Top Deals</a>
+        <a href="https://smartcompare.de/vergleiche">Vergleiche</a>
+        <button id="installPWA" class="install-button">App installieren</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Intelligenter Produktvergleich</h1>
+      <p>Finden Sie die besten Produkte zum besten Preis</p>
+      <div class="search-container hero-search">
+        <input type="search" id="heroSearch" placeholder="Welches Produkt suchen Sie?">
+        <button id="heroSearchBtn">Jetzt vergleichen</button>
+      </div>
+    </section>
+
+    <section class="trending-products">
+      <div class="section-header">
+        <h2>Aktuelle Trending Produkte</h2>
+        <div class="filter-controls">
+          <button class="filter-btn active">Alle</button>
+          <button class="filter-btn">Elektronik</button>
+          <button class="filter-btn">Zuhause</button>
+          <button class="filter-btn">Büro</button>
+        </div>
+      </div>
+      <div id="trendingGrid" class="product-grid"></div>
+    </section>
+
+    <section class="comparison-tool">
+      <h2>Produktvergleich</h2>
+      <div id="comparisonContainer" class="comparison-container">
+        <div id="productSelectors"></div>
+        <div id="comparisonTable"></div>
+      </div>
+    </section>
+
+    <section class="price-history">
+      <h2>Preisverlauf</h2>
+      <div id="priceChart"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Über uns</h3>
+        <p>SmartCompare bietet Ihnen fundierte Produktvergleiche und Preisanalysen.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Links</h3>
+        <a href="https://smartcompare.de/datenschutz">Datenschutz</a>
+        <a href="https://smartcompare.de/impressum">Impressum</a>
+        <a href="https://smartcompare.de/kontakt">Kontakt</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
